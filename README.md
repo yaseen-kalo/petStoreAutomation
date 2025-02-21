@@ -91,3 +91,4 @@ Steps we took to perform complete task
 11. Generate Extent Report from creating ExtentListenerClass in utility package.
 12. Generate testng.xml file.
 13. Add Listener tag in xml and run testcases from xml file.
+14. Implement logger using log4j2 to generate logs.
