@@ -1,80 +1,78 @@
 package petStore.payloads;
 
+
 public class user {
 
-    //pojo class, plain old java object
+    int id;
+    String username;
+    String firstName;
+    String lastName;
+    String email;
+    String password;
+    String phone;
+    int userStatus = 0;
 
-    public static String username;
-    public static String firstName;
-    public static String lastName;
-    public static String email;
-    public static String password;
-    public static String phone;
-    public static int userStatus = 0;
-
-    public static int id;
-
-    public static int getId() {
+    public int getId() {
         return id;
     }
 
-    public static void setId(int id) {
-        user.id = id;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public static String getUsername() {
+    public String getUsername() {
         return username;
     }
 
-    public static void setUsername(String username) {
-        user.username = username;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
-    public static String getFirstName() {
+    public String getFirstName() {
         return firstName;
     }
 
-    public static void setFirstName(String firstName) {
-        user.firstName = firstName;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public static String getLastName() {
+    public String getLastName() {
         return lastName;
     }
 
-    public static void setLastName(String lastName) {
-        user.lastName = lastName;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
-    public static String getEmail() {
+    public String getEmail() {
         return email;
     }
 
-    public static void setEmail(String email) {
-        user.email = email;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public static String getPassword() {
+    public String getPassword() {
         return password;
     }
 
-    public static void setPassword(String password) {
-        user.password = password;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
-    public static String getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public static void setPhone(String phone) {
-        user.phone = phone;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
-    public static int getUserStatus() {
+    public int getUserStatus() {
         return userStatus;
     }
 
-    public static void setUserStatus(int userStatus) {
-        user.userStatus = userStatus;
+    public void setUserStatus(int userStatus) {
+        this.userStatus = userStatus;
     }
 }

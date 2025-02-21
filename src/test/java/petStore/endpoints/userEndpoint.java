@@ -23,7 +23,7 @@ public class userEndpoint {
     public static Response getUser(String Username) {
         Response response = given()
                 .accept(ContentType.JSON)
-                .pathParams("username", user.getUsername())
+                .pathParams("username", Username)
                 .when()
                 .get(Routes.getUser);
 
@@ -34,7 +34,7 @@ public class userEndpoint {
         Response response = given()
                 .accept(ContentType.JSON)
                 .contentType(ContentType.JSON)
-                .pathParams("Username", user.getUsername())
+                .pathParams("username", Username)
                 .body(payload)
                 .when()
                 .put(Routes.putUser);
