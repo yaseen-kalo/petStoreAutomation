@@ -8,10 +8,15 @@ import petStore.endpoints.userEndpoint;
 import petStore.payloads.user;
 import petStore.utilities.DataProviders;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class UserTestDataDriven {
 
     user userPayload = new user();
     Faker fake;
+    public static Logger logger = LogManager.getLogger("petStoreAutomation");
+
 
     @Test(dataProvider = "UserData", dataProviderClass = DataProviders.class, priority = 1)
     public void testCreateUser(int userId, String Username, String firstName, String lastName, String email, String password, String Phone, int userStatus)
@@ -34,6 +39,9 @@ public class UserTestDataDriven {
 
            //validation
            Assert.assertEquals(response.getStatusCode(), 200);
+
+        //log
+        logger.info("Create User executed");
     }
 
 
@@ -48,6 +56,9 @@ public class UserTestDataDriven {
 
         //validation
         Assert.assertEquals(response.getStatusCode(), 200);
+
+        //log
+        logger.info("Get User executed");
     }
 
    @Test(priority = 3,  dataProviderClass = DataProviders.class, dataProvider = "UserData")
@@ -71,9 +82,12 @@ public class UserTestDataDriven {
 
         //validation
         Assert.assertEquals(response.getStatusCode(), 200);
+
+       //log
+       logger.info("Update User executed");
     }
 
-    @Test(priority = 3,  dataProviderClass = DataProviders.class, dataProvider = "UserData")
+    @Test(priority = 4,  dataProviderClass = DataProviders.class, dataProvider = "UserData")
     public void testDeleteUser(int userId, String Username, String firstName, String lastName, String email, String password, String Phone, int userStatus)
     {
         Response response = userEndpoint.deleteUser(Username);
@@ -83,5 +97,8 @@ public class UserTestDataDriven {
 
         //validation
         Assert.assertEquals(response.getStatusCode(), 200);
+
+        //log
+        logger.warn("User will deleted");
     }
 }

@@ -8,10 +8,15 @@ import org.testng.annotations.Test;
 import petStore.endpoints.userEndpoint;
 import petStore.payloads.user;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class UserTest {
 
     Faker fake;
     user userPayload;
+    public static Logger logger;
+
     @BeforeClass
     public void generateUserTestData()
     {
@@ -26,6 +31,7 @@ public class UserTest {
         userPayload.setPassword(fake.internet().password(5,10));
         userPayload.setPhone(fake.phoneNumber().phoneNumber());
 
+        logger = LogManager.getLogger("petStoreAutomation");
     }
 
     @Test(priority = 1)
@@ -38,6 +44,9 @@ public class UserTest {
 
            //validation
            Assert.assertEquals(response.getStatusCode(), 200);
+
+           //log
+        logger.info("Create User executed");
     }
 
 
@@ -52,6 +61,9 @@ public class UserTest {
 
         //validation
         Assert.assertEquals(response.getStatusCode(), 200);
+
+        //log
+        logger.info("Get User executed");
     }
 
     @Test(priority = 3)
@@ -69,6 +81,9 @@ public class UserTest {
 
         //read data again to verify that the data gets changed or not.
         testGetUser();
+
+        //log
+        logger.info("Update User executed");
     }
 
     @Test(priority = 4)
@@ -81,5 +96,8 @@ public class UserTest {
 
         //validation
         Assert.assertEquals(response.getStatusCode(), 200);
+
+        //log
+        logger.warn("User will deleted");
     }
 }
