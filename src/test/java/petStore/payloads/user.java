@@ -10,7 +10,7 @@ public class user {
     String email;
     String password;
     String phone;
-    int userStatus = 0;
+    int userStatus;
 
     public int getId() {
         return id;

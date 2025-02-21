@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "username": "john_doe92",
+    "firstName": "A",
+    "lastName": "Doe",
+    "email": "john.doe92@example.com",
+    "password": "P@ssw0rd1",
+    "phone": "123-456-7890",
+    "userStatus": 1
+  },
+  {
+    "id": 2,
+    "username": "emma_smith88",
+    "firstName": "B",
+    "lastName": "Smith",
+    "email": "emma.smith88@example.com",
+    "password": "SecurePass!2",
+    "phone": "987-654-3210",
+    "userStatus": 0
+  },
+  {
+    "id": 3,
+    "username": "chris_brown77",
+    "firstName": "C",
+    "lastName": "Brown",
+    "email": "chris.brown77@example.com",
+    "password": "RandomPass123",
+    "phone": "456-789-1234",
+    "userStatus": 1
+  },
+  {
+    "id": 4,
+    "username": "olivia_james55",
+    "firstName": "D",
+    "lastName": "James",
+    "email": "olivia.james55@example.com",
+    "password": "OliviaSecure!",
+    "phone": "321-654-9870",
+    "userStatus": 0
+  },
+  {
+    "id": 5,
+    "username": "michael_jordan23",
+    "firstName": "E",
+    "lastName": "Jordan",
+    "email": "michael.jordan23@example.com",
+    "password": "JumpHigh23!",
+    "phone": "654-321-7890",
+    "userStatus": 1
+  },
+  {
+    "id": 6,
+    "username": "sophia_williams19",
+    "firstName": "F",
+    "lastName": "Williams",
+    "email": "sophia.williams19@example.com",
+    "password": "SophiaPW99",
+    "phone": "789-123-4567",
+    "userStatus": 0
+  },
+  {
+    "id": 7,
+    "username": "daniel_roberts89",
+    "firstName": "G",
+    "lastName": "Roberts",
+    "email": "daniel.roberts89@example.com",
+    "password": "DanielPass!89",
+    "phone": "123-789-6543",
+    "userStatus": 1
+  },
+  {
+    "id": 8,
+    "username": "isabella_martin47",
+    "firstName": "H",
+    "lastName": "Martin",
+    "email": "isabella.martin47@example.com",
+    "password": "IsabellaSafe47",
+    "phone": "987-321-6547",
+    "userStatus": 0
+  },
+  {
+    "id": 9,
+    "username": "william_harris33",
+    "firstName": "I",
+    "lastName": "Harris",
+    "email": "william.harris33@example.com",
+    "password": "WilliamPass33!",
+    "phone": "321-987-6541",
+    "userStatus": 1
+  },
+  {
+    "id": 10,
+    "username": "ava_clark91",
+    "firstName": "J",
+    "lastName": "Clark",
+    "email": "ava.clark91@example.com",
+    "password": "AvaStrong91",
+    "phone": "654-789-3210",
+    "userStatus": 0
+  }
+]
