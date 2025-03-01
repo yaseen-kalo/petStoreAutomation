@@ -22,8 +22,8 @@
                     <version>3.10.1</version>
                     <configuration>
                         <!-- put your configurations here -->
-                        <source>17</source> <!-- or your JDK version -->
-                        <target>17</target> <!-- or your JDK version -->
+                        <source>21</source> <!-- or your JDK version -->
+                        <target>21</target> <!-- or your JDK version -->
                         <fork>true</fork>
                         <compilerArgs>
                             <arg>--add-opens</arg>
@@ -32,7 +32,6 @@
                         </compilerArgs>
                     </configuration>
                 </plugin>
-
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
@@ -43,9 +42,7 @@
                         </suiteXmlFiles>
                     </configuration>
                 </plugin>
-
             </plugins>
-
         </pluginManagement>
     </build>
 

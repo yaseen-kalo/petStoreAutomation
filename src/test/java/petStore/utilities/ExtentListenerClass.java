@@ -32,7 +32,7 @@ public class ExtentListenerClass implements ITestListener {
         reports.attachReporter(htmlReporter);
 
         //add system information/environment info to reports
-        reports.setSystemInfo("Machine:", "mc01");
+        reports.setSystemInfo("Machine:", "macbook");
         reports.setSystemInfo("OS", System.getProperty("os.name"));
         reports.setSystemInfo("user name:", System.getProperty("user.name"));
 

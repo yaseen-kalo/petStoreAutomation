@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "userId": 1,
     "username": "john_doe92",
     "firstName": "A",
     "lastName": "Doe",
@@ -10,7 +10,7 @@
     "userStatus": 1
   },
   {
-    "id": 2,
+    "userId": 2,
     "username": "emma_smith88",
     "firstName": "B",
     "lastName": "Smith",
@@ -20,17 +20,7 @@
     "userStatus": 0
   },
   {
-    "id": 3,
-    "username": "chris_brown77",
-    "firstName": "C",
-    "lastName": "Brown",
-    "email": "chris.brown77@example.com",
-    "password": "RandomPass123",
-    "phone": "456-789-1234",
-    "userStatus": 1
-  },
-  {
-    "id": 4,
+    "userId": 4,
     "username": "olivia_james55",
     "firstName": "D",
     "lastName": "James",
@@ -40,7 +30,7 @@
     "userStatus": 0
   },
   {
-    "id": 5,
+    "userId": 5,
     "username": "michael_jordan23",
     "firstName": "E",
     "lastName": "Jordan",
@@ -50,7 +40,7 @@
     "userStatus": 1
   },
   {
-    "id": 6,
+    "userId": 6,
     "username": "sophia_williams19",
     "firstName": "F",
     "lastName": "Williams",
@@ -60,7 +50,7 @@
     "userStatus": 0
   },
   {
-    "id": 7,
+    "userId": 7,
     "username": "daniel_roberts89",
     "firstName": "G",
     "lastName": "Roberts",
@@ -70,7 +60,7 @@
     "userStatus": 1
   },
   {
-    "id": 8,
+    "userId": 8,
     "username": "isabella_martin47",
     "firstName": "H",
     "lastName": "Martin",
@@ -80,7 +70,7 @@
     "userStatus": 0
   },
   {
-    "id": 9,
+    "userId": 9,
     "username": "william_harris33",
     "firstName": "I",
     "lastName": "Harris",
@@ -90,7 +80,7 @@
     "userStatus": 1
   },
   {
-    "id": 10,
+    "userId": 10,
     "username": "ava_clark91",
     "firstName": "J",
     "lastName": "Clark",

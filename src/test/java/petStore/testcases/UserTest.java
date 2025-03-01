@@ -23,7 +23,7 @@ public class UserTest {
         fake = new Faker();
         userPayload = new user();
 
-        userPayload.setId(fake.idNumber().hashCode());
+        userPayload.setUserId(fake.idNumber().hashCode());
         userPayload.setUsername(fake.name().username());
         userPayload.setFirstName(fake.name().firstName());
         userPayload.setLastName(fake.name().lastName());
@@ -34,7 +34,7 @@ public class UserTest {
         logger = LogManager.getLogger("petStoreAutomation");
     }
 
-    @Test(priority = 1)
+    @Test(priority = 1, invocationCount = 50)
     public void testCreateUser()
     {
            Response response = userEndpoint.createUser(userPayload);

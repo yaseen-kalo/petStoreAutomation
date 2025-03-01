@@ -21,7 +21,7 @@ public class UserTestDataDriven {
     @Test(dataProvider = "UserData", dataProviderClass = DataProviders.class, priority = 1)
     public void testCreateUser(int userId, String Username, String firstName, String lastName, String email, String password, String Phone, int userStatus)
     {
-        userPayload.setId(userId);
+        userPayload.setUserId(userId);
         userPayload.setUsername(Username);
         userPayload.setFirstName(firstName);
         userPayload.setLastName(lastName);
@@ -65,7 +65,7 @@ public class UserTestDataDriven {
     public void testUpdateUser(int userId, String Username, String firstName, String lastName, String email, String password, String Phone, int userStatus)
    {
        user updatedUserPayload = new user();
-       updatedUserPayload.setId(userId);
+       updatedUserPayload.setUserId(userId);
        updatedUserPayload.setUsername(Username);
        updatedUserPayload.setFirstName(firstName); // Set new first name
        updatedUserPayload.setLastName(lastName);

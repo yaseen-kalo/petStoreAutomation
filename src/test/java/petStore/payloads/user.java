@@ -1,9 +1,11 @@
 package petStore.payloads;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class user {
 
-    int id;
+    int userId;
     String username;
     String firstName;
     String lastName;
@@ -12,13 +14,9 @@ public class user {
     String phone;
     int userStatus;
 
-    public int getId() {
-        return id;
-    }
+    public int getUserId() {return userId;}
 
-    public void setId(int id) {
-        this.id = id;
-    }
+    public void setUserId(int userId) { this.userId = userId;  }
 
     public String getUsername() {
         return username;

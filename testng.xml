@@ -4,21 +4,28 @@
     <listeners>
         <listener class-name="petStore.utilities.ExtentListenerClass"></listener>
     </listeners>
-    <test verbose="2" preserve-order="true" name="/Users/yaseenkalo/Documents/automationProject/petStoreAutomation">
+    <test verbose="2" preserve-order="true" name="/Users/yaseenkalo/Documents/automationProject/petStoreAutomation" time-out="6000">
         <classes>
-            <class name="petStore.testcases.UserTest">
+<!--           <class name="petStore.testcases.UserTest">
                 <methods>
                     <include name="testCreateUser"/>
                     <include name="testGetUser"/>
                     <include name="testUpdateUser"/>
                     <include name="testDeleteUser"/>
                 </methods>
-            </class>
+            </class>-->
             <class name="petStore.testcases.UserTestDataDriven">
                 <methods><include name="testCreateUser"/>
                     <include name="testGetUser"/>
                     <include name="testUpdateUser"/>
                     <include name="testDeleteUser"/>
+                </methods>
+            </class>
+            <class name="petStore.testcases.StoreTestDataDriven">
+                <methods><include name="testGetInventory"/>
+                    <include name="testCreateOrder"/>
+                    <include name="testGetOrder"/>
+                    <include name="testDeleteOrder"/>
                 </methods>
             </class>
         </classes>

@@ -11,11 +11,14 @@ public class Routes {
     public static final String putUser = baseURL + "/user/{username}";
     public static final String deleteUser = baseURL + "/user/{username}";
 
+    //store module endpoints
+    public static final String postOrder = baseURL + "/store/order";
+    public static final String getInventory = baseURL + "/store/inventory";
+    public static final String getOrder = baseURL + "/store/order/{orderId}";
+    public static final String deleteOrder = baseURL + "/store/order/{orderId}";
 
     //pet module endpoints
 
-
-    //store module endpoints
 
 
 }
